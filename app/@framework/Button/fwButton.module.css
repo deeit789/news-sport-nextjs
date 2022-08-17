@@ -1,0 +1,106 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+.ripple {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  transform: scale(0);
+  animation: ripple 0.3s linear;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+}
+
+@keyframes ripple {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(15);
+  }
+}
+
+.fs {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+
+.lg {
+  min-width: 180px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.md {
+  min-width: 150px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.sm {
+  min-width: 120px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.sm {
+  min-width: 100px;
+  height: 40px;
+  font-size: 16px;
+}
+
+/* Theme */
+.primary {
+  box-shadow: 0px 0px 3px 1px rgba(128, 128, 128, 0.127);
+  color: white;
+  background: rgb(40, 223, 223);
+  background: linear-gradient(
+    42deg,
+    rgba(40, 223, 223, 0.8) 0%,
+    rgba(50, 127, 255, 0.8) 50%,
+    rgba(67, 209, 245, 0.8) 100%
+  );
+}
+
+.primary:hover {
+  color: white;
+  background: rgb(40, 223, 223);
+  background: linear-gradient(
+    42deg,
+    rgba(40, 223, 223, 1) 0%,
+    rgba(50, 127, 255, 1) 50%,
+    rgba(67, 209, 245, 1) 100%
+  );
+}
+.primary:active {
+  box-shadow: 0px 0px 3px 1px rgba(128, 128, 128, 0.327);
+}
+
+@media only screen and (min-width: 1200px) {
+  .auto {
+    font-size: 16px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .auto {
+    height: 38px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .auto {
+    height: 35px;
+    font-size: 14px;
+  }
+}
