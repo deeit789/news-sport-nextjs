@@ -1,0 +1,27 @@
+.new-item .title, .new-card .title, .title {
+  color: #333 !important;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: -.02rem;
+  text-decoration: none;
+  transition: color .3s ease;
+  display: initial;
+  line-height: 2rem;
+}
+
+.new-item .description, .new-item .timer{
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color .3s ease;
+    line-height: 2rem;
+}
+
+.text-timer {
+    color: #888;
+    font-size: 12px;
+}
+
+.title:hover, .new-card img:hover {
+    color: #f12f19 !important;
+    cursor: pointer;
+}

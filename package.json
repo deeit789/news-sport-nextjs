@@ -1,0 +1,27 @@
+{
+  "name": "webnews-sport",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "play": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "antd": "^4.22.5",
+    "cookies-next": "^2.1.1",
+    "moment": "^2.29.4",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "typescript": "^4.7.4"
+  }
+}
