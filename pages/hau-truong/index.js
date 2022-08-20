@@ -27,7 +27,7 @@ const SportBackstageInfo = () => {
       e.currentTarget.scrollHeight - e.currentTarget.scrollTop ===
       ContainerHeight
     ) {
-      appendData();
+      setData(data);
     }
   };
   return (
