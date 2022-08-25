@@ -1,0 +1,92 @@
+.new-item .title,
+.new-card .title,
+.title {
+  color: #333 !important;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: -0.02rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: initial;
+  line-height: 2rem;
+}
+
+.new-item .description,
+.new-item .timer {
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  line-height: 2rem;
+}
+
+.text-timer {
+  color: #888;
+  font-size: 12px;
+}
+
+.title:hover,
+.new-card img:hover {
+  color: #f12f19 !important;
+  cursor: pointer;
+}
+.menutab {
+  display: flex;
+  height: 30px;
+  border-bottom: 0.1px solid grey;
+  margin-bottom: 5px;
+  gap: 20px;
+}
+.menutab .menutabitem {
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  height: 100%;
+  cursor: pointer;
+}
+.menutabitemchecked {
+  color: #f12f19 !important;
+}
+.menutabitemhoverchecked {
+  background-color: #f12f19 !important;
+  width: 100%;
+}
+.menutabitemtitle {
+  width: 100%;
+  height: 28px;
+}
+.menutabitemhover {
+  height: 2px;
+  width: 0px;
+}
+.menutab .menutabitem:hover {
+  color: #f12f19;
+}
+.menutab .menutabitem:hover .menutabitemhover {
+  animation-name: tabhover;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+.menutabitemhoverchecked {
+  background-color: #f12f19;
+  width: 100% !important;
+  height: 2px !important;
+}
+@keyframes tabhover {
+  from {
+    background-color: #f12f19;
+    width: 0px;
+  }
+  to {
+    background-color: #f12f19;
+    width: 100%;
+  }
+}
+
+.menutabBatter {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
