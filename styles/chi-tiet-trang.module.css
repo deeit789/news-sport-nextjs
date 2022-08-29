@@ -1,0 +1,19 @@
+.title, .title-italics {
+    color: #333 !important;
+    font-weight: bold;
+    letter-spacing: -.02rem;
+    text-decoration: none;
+    transition: color .3s ease;
+    line-height: 2rem;
+}
+.title-italics {
+    font-style: italic;
+}
+.text-timer {
+    color: #888;
+    font-size: 12px;
+}
+.title:hover, .new-item img:hover {
+    color: #f12f19 !important;
+    cursor: pointer;
+}
