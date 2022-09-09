@@ -28,7 +28,8 @@ const FootballCommentary = ({ listPredic, listWatchMore }) => {
     }
   };
 
-  
+
+
 
   return (
     <div className="body">
@@ -41,37 +42,38 @@ const FootballCommentary = ({ listPredic, listWatchMore }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h2 className="title-heading">Nhận định bóng đá</h2>
-      <div style={{ marginBottom: "20px" }} className={styles.menutab}>
-        {fileMenuTab1.map((val, idx) => {
-          return (
-            <Link key={idx} href={"/nhan-dinh-bong-da/" + val.path}>
-              <a>
-                <div
-                  className={
-                    styles.menutabitem +
-                    " " +
-                    (route.query.id === val.path
-                      ? styles.menutabitemchecked
-                      : "")
-                  }
-                  key={idx}
-                >
-                  <div className={styles.menutabitemtitle}>{val.title}</div>
+      <div style={{ marginBottom: "20px" }} className={styles.menutabX}>
+        <div  className={styles.menutab}>
+          {fileMenuTab1.map((val, idx) => {
+            return (
+              <Link key={idx} href={"/nhan-dinh-bong-da/" + val.path}>
+                <a>
                   <div
                     className={
-                      styles.menutabitemhover +
+                      styles.menutabitem +
                       " " +
                       (route.query.id === val.path
-                        ? styles.menutabitemhoverchecked
+                        ? styles.menutabitemchecked
                         : "")
                     }
-                  ></div>
-                </div>
-              </a>
-            </Link>
-          );
-        })}
-      </div>
+                    key={idx}
+                  >
+                    <div className={styles.menutabitemtitle}>{val.title}</div>
+                    <div
+                      className={
+                        styles.menutabitemhover +
+                        " " +
+                        (route.query.id === val.path
+                          ? styles.menutabitemhoverchecked
+                          : "")
+                      }
+                    ></div>
+                  </div>
+                </a>
+              </Link>
+            );
+          })}
+        </div></div>
       <Row gutter={20}>
         <Col md={16}>
           <Row style={{ background: "#e8eaef" }} gutter={10}>

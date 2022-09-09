@@ -29,12 +29,21 @@
   color: #f12f19 !important;
   cursor: pointer;
 }
+.menutabX{
+  
+  overflow-x: auto;
+}
+.menutabX::-webkit-scrollbar{
+  height: 0px;
+}
 .menutab {
   display: flex;
   height: 30px;
   border-bottom: 0.1px solid grey;
   margin-bottom: 5px;
   gap: 20px;
+  min-width: 1000px;
+  
 }
 .menutab .menutabitem {
   color: #333;
@@ -89,4 +98,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.hidden-sport{
+  display: none;
 }
